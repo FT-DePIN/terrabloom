@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You! — TerraBloom Organics</title>
+    <meta name="description"
+        content="Thank you for joining TerraBloom! Your free Organic Kitchen Guide and first produce box are on their way." />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        .thankyou-page {
+            background: linear-gradient(135deg, #0D2B1A 0%, #1A5C38 50%, #2D8B5A 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 24px;
+            position: relative;
+        }
+
+        .thankyou-page::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 50% 0%, rgba(212, 168, 71, 0.15), transparent 60%);
+        }
+
+        .confetti {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .confetti-piece {
+            position: absolute;
+            width: 8px;
+            height: 16px;
+            top: -20px;
+            border-radius: 3px;
+            animation: confettiFall linear forwards;
+        }
+
+        @keyframes confettiFall {
+            to {
+                transform: translateY(110vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes popIn {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            70% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .thankyou-card {
+            animation: popIn 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+            position: relative;
+            z-index: 1;
+        }
+
+        .share-box {
+            background: var(--bg);
+            border-radius: var(--radius-md);
+            padding: 20px 24px;
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+
+        .share-box p {
+            font-size: 0.88rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .share-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .share-btn {
+            padding: 9px 18px;
+            border-radius: 50px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Confetti -->
+    <div class="confetti" id="confetti"></div>
+
+    <div class="thankyou-page">
+        <a href="index.html"
+            style="position:absolute;top:24px;left:24px;display:flex;align-items:center;gap:8px;color:rgba(255,255,255,0.7);font-size:0.85rem;z-index:2;">
+            <div class="logo-icon" style="width:32px;height:32px;font-size:1rem;">🌿</div>
+            TerraBloom
+        </a>
+
+        <div class="thankyou-card">
+            <div class="thankyou-icon">🎉</div>
+            <h1>You're In! Welcome to the TerraBloom Family</h1>
+            <p>Your <strong>free Organic Kitchen Guide</strong> is heading to your inbox right now. And your
+                <strong>first produce box is reserved</strong> — we'll confirm your delivery details by email within the
+                hour.</p>
+
+            <div class="next-steps">
+                <h4>What happens next?</h4>
+                <div class="next-step-item">
+                    <div class="step-bullet">1</div>
+                    <span>Check your inbox — your free guide PDF will arrive in the next 2 minutes (check spam if you
+                        don't see it)</span>
+                </div>
+                <div class="next-step-item">
+                    <div class="step-bullet">2</div>
+                    <span>You'll receive a welcome email with your account details and delivery preferences form</span>
+                </div>
+                <div class="next-step-item">
+                    <div class="step-bullet">3</div>
+                    <span>We'll match you with the nearest partner farm and confirm your first delivery date</span>
+                </div>
+                <div class="next-step-item">
+                    <div class="step-bullet">4</div>
+                    <span>Your first certified organic produce box will arrive within 5–7 business days — absolutely
+                        free!</span>
+                </div>
+            </div>
+
+            <div class="share-box">
+                <p>🌿 Know someone who'd love fresh organic food? Share TerraBloom!</p>
+                <div class="share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://terrabloomorganics.com"
+                        target="_blank" rel="noopener" class="share-btn" style="background:#1877F2;color:white;">f
+                        Share</a>
+                    <a href="https://twitter.com/intent/tweet?text=Just%20got%20a%20free%20organic%20box%20from%20TerraBloom!%20🌿&url=https://terrabloomorganics.com"
+                        target="_blank" rel="noopener" class="share-btn" style="background:#000;color:white;">𝕏
+                        Tweet</a>
+                    <a href="mailto:?subject=You%20should%20try%20TerraBloom!&body=I%20just%20signed%20up%20for%20a%20free%20organic%20produce%20box%20from%20TerraBloom.%20You%20should%20try%20it!%20https://terrabloomorganics.com"
+                        class="share-btn" style="background:#D4A847;color:#1C1C1E;">✉️ Email a Friend</a>
+                </div>
+            </div>
+
+            <div class="thankyou-actions">
+                <a href="index.html" class="btn btn-primary">🏡 Back to Home</a>
+                <a href="blog.html" class="btn btn-outline">📖 Read Our Blog</a>
+                <a href="services.html" class="btn btn-outline">🥦 View Products</a>
+            </div>
+
+            <p style="font-size:0.8rem;color:var(--text-light);margin-top:1.5rem;text-align:center;">
+                Any questions? Email us at <a href="mailto:hello@terrabloomorganics.com"
+                    style="color:var(--primary);">hello@terrabloomorganics.com</a>
+            </p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Generate confetti
+        const confetti = document.getElementById('confetti');
+        const colors = ['#1A5C38', '#D4A847', '#2D8B5A', '#E8F5EE', '#F0C866', '#52B788'];
+        for (let i = 0; i < 80; i++) {
+            const piece = document.createElement('div');
+            piece.className = 'confetti-piece';
+            piece.style.left = Math.random() * 100 + 'vw';
+            piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+            piece.style.animationDuration = (Math.random() * 3 + 2) + 's';
+            piece.style.animationDelay = (Math.random() * 2) + 's';
+            piece.style.transform = `rotate(${Math.random() * 360}deg)`;
+            piece.style.opacity = Math.random() * 0.6 + 0.4;
+            confetti.appendChild(piece);
+        }
+    </script>
+</body>
+
+</html>

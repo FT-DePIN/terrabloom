@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TerraBloom Organics — Farm-Fresh, Delivered to Your Door</title>
+  <meta name="description" content="TerraBloom Organics delivers certified organic, farm-fresh produce boxes and gourmet herbs straight to your door. Eat well, live green, feel great." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .scroll-indicator {
+      position: absolute;
+      bottom: 36px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      z-index: 2;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      animation: float 2s ease-in-out infinite;
+    }
+    .scroll-indicator::after {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 24px;
+      border-right: 2px solid rgba(255,255,255,0.5);
+      border-bottom: 2px solid rgba(255,255,255,0.5);
+      transform: rotate(45deg);
+      margin-top: -6px;
+    }
+    .featured-banner {
+      background: var(--secondary);
+      padding: 12px 0;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--dark);
+      letter-spacing: 0.03em;
+    }
+    .featured-banner a { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="featured-banner">
+    🌿 Free delivery on your first box! Use code <strong>BLOOM25</strong> at checkout. &nbsp;
+    <a href="landing.html">Claim Offer →</a>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="logo" aria-label="TerraBloom Organics Home">
+        <div class="logo-icon">🌿</div>
+        Terra<span>Bloom</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Products</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="landing.html" class="btn btn-primary btn-sm nav-cta">Get Free Box</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="container" style="padding-top:80px;">
+      <div class="hero-content">
+        <div class="hero-badge animate-fade-up">
+          <span>🌱</span> Certified Organic &amp; Sustainably Sourced
+        </div>
+        <h1 class="animate-fade-up delay-1">
+          Fresh From the <em>Farm</em>,<br>Straight to Your Table
+        </h1>
+        <p class="hero-desc animate-fade-up delay-2">
+          TerraBloom Organics delivers hand-picked, certified organic produce boxes and gourmet herb collections directly to your door — every week, without compromise.
+        </p>
+        <div class="hero-actions animate-fade-up delay-3">
+          <a href="landing.html" class="btn btn-secondary btn-lg">🎁 Get My Free Box</a>
+          <a href="services.html" class="btn btn-white btn-lg">Explore Products</a>
+        </div>
+        <div class="hero-stats animate-fade-up delay-4">
+          <div class="hero-stat">
+            <div class="hero-stat-num"><span data-target="4200" data-suffix="+">0</span></div>
+            <div class="hero-stat-label">Happy Customers</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num"><span data-target="98" data-suffix="%">0</span></div>
+            <div class="hero-stat-label">Satisfaction Rate</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num"><span data-target="12">0</span></div>
+            <div class="hero-stat-label">Partner Farms</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Right Image -->
+    <div class="hero-image-col">
+      <div class="hero-img-frame">
+        <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=800&q=85" alt="Fresh organic produce box" />
+        <div class="hero-img-badge">
+          <div class="badge-icon">🏅</div>
+          <div class="badge-text">
+            <strong>USDA Certified</strong>
+            <span>100% Organic</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-label="Scroll down"></div>
+  </section>
+
+  <!-- VALUE PROPS -->
+  <section class="section values-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Why TerraBloom?</span>
+        <h2 class="section-title">The Freshest Promise We Make</h2>
+        <p class="section-desc">We don't just deliver food — we deliver peace of mind, knowing exactly where every vegetable, herb, and leaf on your plate comes from.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-card reveal">
+          <div class="value-icon">🌾</div>
+          <h3>Farm-to-Door Freshness</h3>
+          <p>Our produce is harvested within 24–48 hours of delivery. No warehouses, no middlemen — just pure freshness at its peak nutritional value.</p>
+        </div>
+        <div class="value-card reveal">
+          <div class="value-icon">♻️</div>
+          <h3>Zero-Waste Packaging</h3>
+          <p>Every box is packed in 100% compostable, recycled materials. Our delivery fleet runs on biofuel, reducing our carbon footprint by over 60%.</p>
+        </div>
+        <div class="value-card reveal">
+          <div class="value-icon">🔬</div>
+          <h3>Certified & Lab-Tested</h3>
+          <p>All produce is third-party tested for pesticides, heavy metals, and freshness. USDA Organic and Non-GMO Project Verified on every single item.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS PREVIEW -->
+  <section class="section products-preview">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Our Offerings</span>
+        <h2 class="section-title">Choose Your Perfect Box</h2>
+        <p class="section-desc">From weekly produce bundles to artisan herb collections — there's a TerraBloom box crafted just for your lifestyle.</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card reveal">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=800&q=85" alt="Weekly Organic Produce Box" loading="lazy" />
+            <span class="product-badge">⭐ Best Seller</span>
+          </div>
+          <div class="product-body">
+            <div class="product-price">$39.99 <small>/week</small></div>
+            <h3>Weekly Organic Produce Box</h3>
+            <p>A thoughtfully curated selection of 12–15 seasonal fruits and vegetables, sourced from local organic farms within 100 miles of your door.</p>
+            <div class="product-features">
+              <span class="feature-tag">🥦 12–15 items</span>
+              <span class="feature-tag">🌿 Certified Organic</span>
+              <span class="feature-tag">📦 Free Delivery</span>
+              <span class="feature-tag">⏸️ Pause Anytime</span>
+            </div>
+            <a href="services.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+        <div class="product-card reveal">
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1600984575359-310ae7b6bdf2?w=800&q=85" alt="Gourmet Herb & Spice Collection" loading="lazy" />
+            <span class="product-badge">🌟 New</span>
+          </div>
+          <div class="product-body">
+            <div class="product-price">$24.99 <small>/month</small></div>
+            <h3>Gourmet Herb &amp; Spice Collection</h3>
+            <p>Elevate every meal with our hand-picked selection of fresh organic herbs, rare spices, and artisan blends — delivered fresh monthly.</p>
+            <div class="product-features">
+              <span class="feature-tag">🌿 8–10 varieties</span>
+              <span class="feature-tag">🫙 Artisan Blends</span>
+              <span class="feature-tag">📖 Recipe Cards</span>
+              <span class="feature-tag">🌍 Global Spices</span>
+            </div>
+            <a href="services.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section how-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">How It Works</span>
+        <h2 class="section-title">Fresh Produce in 4 Easy Steps</h2>
+        <p class="section-desc">Getting organic goodness delivered to your home has never been simpler — we handle everything.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-number">1</div>
+          <h4>Choose Your Box</h4>
+          <p>Pick from our weekly produce subscription or monthly herb collection.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-number">2</div>
+          <h4>We Harvest Fresh</h4>
+          <p>Our farm partners harvest your order within 24 hours of your delivery date.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-number">3</div>
+          <h4>Packed with Care</h4>
+          <p>Each item is hand-packed in our compostable, insulated eco-boxes.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-number">4</div>
+          <h4>Delivered to You</h4>
+          <p>Your box arrives fresh at your doorstep, ready to cook and enjoy!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Customer Love</span>
+        <h2 class="section-title">What Our Members Say</h2>
+        <p class="section-desc">Over 4,200 families trust TerraBloom to nourish their tables. Here are a few of their stories.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"I switched from a big grocery chain to TerraBloom three months ago and I will never go back. The produce is so vibrant and lasts much longer in the fridge. My kids actually eat their vegetables now!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">
+              <img src="https://i.pravatar.cc/100?img=5" alt="Sarah M." />
+            </div>
+            <div>
+              <div class="reviewer-name">Sarah Mitchell</div>
+              <div class="reviewer-loc">📍 Austin, TX</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"The Gourmet Herb Collection completely transformed my cooking. I've discovered herbs I never even knew existed, and the recipe cards are a game changer. Absolutely love this subscription!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">
+              <img src="https://i.pravatar.cc/100?img=12" alt="James K." />
+            </div>
+            <div>
+              <div class="reviewer-name">James Kowalczyk</div>
+              <div class="reviewer-loc">📍 Portland, OR</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"As a nutritionist, I recommend TerraBloom to all my clients. The lab testing transparency alone makes it stand out. The quality is consistently exceptional — and I love supporting local farms!"</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">
+              <img src="https://i.pravatar.cc/100?img=9" alt="Dr. Priya R." />
+            </div>
+            <div>
+              <div class="reviewer-name">Dr. Priya Raj</div>
+              <div class="reviewer-loc">📍 San Francisco, CA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS SECTION -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="reveal">
+          <div class="stat-num"><span data-target="4200" data-suffix="+">0</span></div>
+          <div class="stat-label">Happy Households</div>
+        </div>
+        <div class="reveal">
+          <div class="stat-num"><span data-target="12">0</span></div>
+          <div class="stat-label">Partner Organic Farms</div>
+        </div>
+        <div class="reveal">
+          <div class="stat-num"><span data-target="98" data-suffix="%">0</span></div>
+          <div class="stat-label">Customer Satisfaction</div>
+        </div>
+        <div class="reveal">
+          <div class="stat-num"><span data-target="60" data-suffix="%">0</span></div>
+          <div class="stat-label">Lower Carbon Footprint</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner">
+    <div class="container">
+      <span class="section-label" style="color:var(--dark);background:rgba(28,28,30,0.1);">Limited Time</span>
+      <h2>Ready to Eat Clean &amp; Live Green?</h2>
+      <p>Join 4,200+ families already enjoying farm-fresh organic produce every week.<br>Get your first box FREE — no strings attached!</p>
+      <a href="landing.html" class="btn btn-primary btn-lg">🌿 Get My Free Box Now</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">🌿</div>
+            Terra<span>Bloom</span>
+          </a>
+          <p>We believe everyone deserves access to truly fresh, organic food. Connecting local farms to your family table since 2020.</p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social" aria-label="Facebook">f</a>
+            <a href="#" class="footer-social" aria-label="Instagram">in</a>
+            <a href="#" class="footer-social" aria-label="Twitter">𝕏</a>
+            <a href="#" class="footer-social" aria-label="Pinterest">P</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="about.html#timeline">Our Story</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Products</h5>
+          <ul>
+            <li><a href="services.html">Produce Box</a></li>
+            <li><a href="services.html">Herb Collection</a></li>
+            <li><a href="landing.html">Free First Box</a></li>
+            <li><a href="contact.html">Custom Orders</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Support</h5>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 TerraBloom Organics. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="disclaimer.html">Disclaimer</a>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

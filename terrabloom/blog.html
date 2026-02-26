@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog — TerraBloom Organics</title>
+    <meta name="description"
+        content="Explore TerraBloom's organic living blog — expert guides on healthy eating, sustainable kitchens, farm-to-table recipes, and organic food education." />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🌿</div>Terra<span>Bloom</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Products</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="landing.html" class="btn btn-primary btn-sm nav-cta">Get Free Box</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="container page-hero-content">
+            <span class="section-label">TerraBloom Blog</span>
+            <h1>Grow What You Know —<br>Live Organically</h1>
+            <p>Expert guides, nutrition science, kitchen tips, and sustainability insights — all designed to help you
+                live a healthier, greener life.</p>
+        </div>
+    </section>
+
+    <!-- BLOG LISTING -->
+    <section class="section" style="background:var(--bg);">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-label">Latest Articles</span>
+                <h2 class="section-title">From Our Writers</h2>
+                <p class="section-desc">Curated knowledge on organic eating, sustainable living, and the science of
+                    clean food — written by our in-house nutritionists and farmers.</p>
+            </div>
+
+            <div class="blog-grid">
+                <!-- BLOG POST 1 -->
+                <article class="blog-card reveal">
+                    <div class="blog-img">
+                        <a href="blog-post-1.html">
+                            <img src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=800&q=85"
+                                alt="5 Surprising Health Benefits of Eating Organic Food" loading="lazy" />
+                        </a>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-category">🌿 Nutrition & Health</div>
+                        <h3><a href="blog-post-1.html">5 Surprising Health Benefits of Eating Organic Food You Probably
+                                Didn't Know</a></h3>
+                        <p>Most people switch to organic food for the obvious reasons — fewer pesticides. But the
+                            science reveals far more compelling benefits that go way beyond the label.</p>
+                        <div class="blog-meta">
+                            <div class="blog-meta-item">👤 Dr. Maya Patel</div>
+                            <div class="blog-meta-item">📅 Feb 10, 2026</div>
+                            <div class="blog-meta-item">⏱️ 8 min read</div>
+                            <a href="blog-post-1.html" class="blog-read-more">Read Article →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- BLOG POST 2 -->
+                <article class="blog-card reveal">
+                    <div class="blog-img">
+                        <a href="blog-post-2.html">
+                            <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=85"
+                                alt="How to Build a Sustainable Kitchen" loading="lazy" />
+                        </a>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-category">♻️ Sustainable Living</div>
+                        <h3><a href="blog-post-2.html">How to Build a Sustainable Kitchen: A Practical Beginner's Guide
+                                for 2026</a></h3>
+                        <p>Creating a zero-waste, eco-friendly kitchen doesn't require a complete renovation. Here's how
+                            to transform your kitchen into a sustainable sanctuary — step by step.</p>
+                        <div class="blog-meta">
+                            <div class="blog-meta-item">👤 Elena Marsh</div>
+                            <div class="blog-meta-item">📅 Feb 18, 2026</div>
+                            <div class="blog-meta-item">⏱️ 9 min read</div>
+                            <a href="blog-post-2.html" class="blog-read-more">Read Article →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Subscribe CTA -->
+            <div style="margin-top:4rem;background:linear-gradient(135deg,var(--primary-dark),var(--primary));border-radius:var(--radius-xl);padding:52px 48px;text-align:center;"
+                class="reveal">
+                <span class="section-label"
+                    style="color:var(--secondary);background:rgba(212,168,71,0.15);">Newsletter</span>
+                <h2 style="color:white;margin-bottom:0.8rem;">Get Fresh Insights in Your Inbox</h2>
+                <p style="color:rgba(255,255,255,0.75);margin-bottom:2rem;">Join 12,000+ readers who get weekly organic
+                    living tips, new recipes, and exclusive subscriber-only discounts.</p>
+                <form style="display:flex;gap:12px;max-width:480px;margin:0 auto;"
+                    onsubmit="this.innerHTML='<p style=color:var(--secondary)>✅ Thank you! Check your inbox.</p>';return false;">
+                    <input type="email" placeholder="your@email.com" required
+                        style="flex:1;padding:14px 20px;border:2px solid rgba(255,255,255,0.2);border-radius:50px;background:rgba(255,255,255,0.1);color:white;font-family:var(--font-body);outline:none;font-size:0.93rem;" />
+                    <button type="submit" class="btn btn-secondary">Subscribe</button>
+                </form>
+                <p style="font-size:0.75rem;color:rgba(255,255,255,0.45);margin-top:12px;">No spam. Unsubscribe at any
+                    time.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">🌿</div>Terra<span>Bloom</span>
+                    </a>
+                    <p>Certified organic produce and herbs delivered to your door. Connecting farms to families since
+                        2020.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="footer-social">f</a><a href="#" class="footer-social">in</a>
+                        <a href="#" class="footer-social">𝕏</a><a href="#" class="footer-social">P</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a href="services.html">Produce Box</a></li>
+                        <li><a href="services.html">Herb Collection</a></li>
+                        <li><a href="landing.html">Free First Box</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 TerraBloom Organics. All rights reserved.</span>
+                <div class="footer-bottom-links"><a href="disclaimer.html">Disclaimer</a><a href="#">Privacy</a><a
+                        href="#">Terms</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
